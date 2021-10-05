@@ -15,7 +15,7 @@ public class Movies {
 
     List<Movie> movieList = new ArrayList<>();
 
-    @GetMapping(path = "/movie", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(path = "/movieOld", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Movie> listAll(){
 
         return movieList;

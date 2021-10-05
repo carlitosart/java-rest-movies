@@ -1,2 +1,18 @@
 ###
-GET http://localhost:8080/movie
+GET http://localhost:8080/
+Accept: application/json
+
+
+###
+GET http://localhost:8080/movies
+Accept: application/json
+
+
+###
+POST http://localhost:8080/movie
+Content-Type: application/json
+
+{
+    "title": "Tarea 1",
+    "description": "Descripcion abc"
+}
