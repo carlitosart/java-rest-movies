@@ -3,16 +3,34 @@ GET http://localhost:8080/
 Accept: application/json
 
 
-###
+### Listar Paises
 GET http://localhost:8080/movies
 Accept: application/json
 
 
-###
-POST http://localhost:8080/movie
+### Crear Pais
+POST http://localhost:8080/movies
 Content-Type: application/json
 
 {
-    "title": "Tarea 1",
-    "description": "Descripcion abc"
+    "country": "UCB",
+    "last_update": "2006-02-15 04:44:00"
 }
+
+### Ver pais por el ID (AutoIncrement)
+GET http://localhost:8080/movies/110
+Accept: application/json
+
+### EDITAR PAIS
+PUT http://localhost:8080/movies/110
+Content-Type: application/json
+
+{
+    "country_id" : 110,
+    "country": "UCBEDIT",
+    "last_update": "2006-02-15 04:44:00"
+}
+
+### ELIMINAR PAIS
+DELETE  http://localhost:8080/movies/110
+Content-Type: application/json

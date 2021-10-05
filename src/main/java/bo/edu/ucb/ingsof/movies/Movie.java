@@ -20,8 +20,9 @@ import javax.persistence.Id;
 public class Movie{
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer country_id;
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    
     
     private String country;
     private String last_update;
